@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Support — TripleTap Pro</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root { --navy: #0D1528; --card: #1a2640; --orange: #FF6B1A; --white: #ffffff; --muted: #8a9bb8; }
+    body { background: var(--navy); color: var(--white); font-family: 'DM Sans', sans-serif; font-size: 16px; line-height: 1.6; }
+    nav { display: flex; justify-content: space-between; align-items: center; padding: 1.5rem 2rem; max-width: 760px; margin: 0 auto; }
+    .logo { font-family: 'Syne', sans-serif; font-weight: 800; font-size: 1.4rem; color: var(--white); text-decoration: none; }
+    .logo span { color: var(--orange); }
+    .content { max-width: 760px; margin: 0 auto; padding: 3rem 2rem 5rem; }
+    .section-label { font-size: 0.8rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--orange); margin-bottom: 0.75rem; font-weight: 500; }
+    h1 { font-family: 'Syne', sans-serif; font-weight: 800; font-size: 2.4rem; margin-bottom: 1rem; }
+    .lead { color: var(--muted); font-size: 1.05rem; margin-bottom: 3rem; max-width: 520px; }
+    .contact-card { background: var(--card); border-radius: 16px; padding: 2rem; border: 1px solid rgba(255,107,26,0.2); margin-bottom: 3rem; }
+    .contact-card h2 { font-family: 'Syne', sans-serif; font-weight: 700; font-size: 1.2rem; margin-bottom: 0.5rem; }
+    .contact-card p { color: var(--muted); font-size: 0.95rem; margin-bottom: 1.25rem; }
+    .email-link { display: inline-block; background: var(--orange); color: var(--white); padding: 0.75rem 1.75rem; border-radius: 50px; text-decoration: none; font-family: 'Syne', sans-serif; font-weight: 700; font-size: 0.95rem; }
+    .email-link:hover { opacity: 0.9; }
+    .faq { display: flex; flex-direction: column; gap: 1rem; }
+    .faq-item { background: var(--card); border-radius: 14px; padding: 1.5rem; border: 1px solid rgba(255,255,255,0.05); }
+    .faq-item h3 { font-family: 'Syne', sans-serif; font-weight: 700; font-size: 1rem; margin-bottom: 0.5rem; }
+    .faq-item p { color: var(--muted); font-size: 0.9rem; }
+    h2.section-h2 { font-family: 'Syne', sans-serif; font-weight: 800; font-size: 1.4rem; margin-bottom: 1.25rem; }
+    footer { border-top: 1px solid rgba(255,255,255,0.07); padding: 2rem; text-align: center; color: var(--muted); font-size: 0.85rem; max-width: 760px; margin: 3rem auto 0; }
+    footer a { color: var(--muted); text-decoration: none; margin: 0 0.75rem; }
+    footer a:hover { color: var(--white); }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="/" class="logo">Triple<span>Tap</span> Pro</a>
+  </nav>
+  <div class="content">
+    <div class="section-label">Help &amp; Support</div>
+    <h1>We've got you covered.</h1>
+    <p class="lead">Having an issue or a question? We typically respond within 24 hours on business days.</p>
+
+    <div class="contact-card">
+      <h2>Contact Support</h2>
+      <p>Email us and describe what's happening. Include your device model and iOS version if possible.</p>
+      <a href="mailto:drumzkick@gmail.com" class="email-link">drumzkick@gmail.com</a>
+    </div>
+
+    <h2 class="section-h2">Frequently Asked Questions</h2>
+    <div class="faq">
+      <div class="faq-item">
+        <h3>How do I connect my Stripe payment link?</h3>
+        <p>Go to Settings → Payments and paste your Stripe Payment Link URL. You can create a Payment Link in your Stripe Dashboard under Products → Payment Links. Once saved, it will be included automatically in every SMS you send.</p>
+      </div>
+      <div class="faq-item">
+        <h3>Can I send payment links from the simulator?</h3>
+        <p>No — SMS requires a real iPhone. The app will notify you if SMS is unavailable. Test the full workflow on a physical device before your first real job.</p>
+      </div>
+      <div class="faq-item">
+        <h3>How do I cancel my subscription?</h3>
+        <p>Open the iOS Settings app → tap your name → Subscriptions → TripleTap Pro → Cancel Subscription. You'll retain access until the end of your current billing period.</p>
+      </div>
+      <div class="faq-item">
+        <h3>How do I restore my purchases on a new phone?</h3>
+        <p>Go to Settings inside TripleTap Pro and tap "Restore Purchases." Make sure you're signed into the same Apple ID used when you originally subscribed.</p>
+      </div>
+      <div class="faq-item">
+        <h3>Where is my data stored?</h3>
+        <p>All your job data is stored locally on your device using SwiftData. TripleTap Pro does not upload your job information to any server. Back up your iPhone regularly via iCloud to protect your data.</p>
+      </div>
+      <div class="faq-item">
+        <h3>How do I add items to my Price Book?</h3>
+        <p>Tap the Price Book tab, select a category (Labor, Parts, Travel, Other), then tap "Add Item" at the bottom. Enter the item name and price and tap Save.</p>
+      </div>
+      <div class="faq-item">
+        <h3>What is Demo Mode?</h3>
+        <p>Demo Mode (found in Settings) replaces your real Stripe payment link with a demo page in SMS messages. Use this when showing the app to other contractors or during testing so no real payment requests are sent.</p>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <p>© 2026 TripleTap Pro</p>
+    <p style="margin-top:0.75rem;">
+      <a href="/">Home</a>
+      <a href="/privacy">Privacy Policy</a>
+      <a href="/terms">Terms of Use</a>
+    </p>
+  </footer>
+</body>
+</html>
